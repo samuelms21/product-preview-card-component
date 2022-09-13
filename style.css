@@ -13,6 +13,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 p {
   font-size: 14px;
 }
@@ -20,6 +23,7 @@ body {
   background-color: var(--cream);
 }
 .attribution {
+  margin-top: 1rem;
   font-size: 11px;
   text-align: center;
 }
@@ -36,9 +40,31 @@ body {
   font-family: var(--ff-fraunces);
 }
 .card-text {
-  padding: 1rem;
+  padding: 1.25rem 1.5rem;
+}
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#prices {
+  padding: 0.5rem 0;
+  align-items: center;
+}
+#old-price {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+#current-price {
+  margin-right: 0.75rem;
+  color: var(--dark-cyan);
+  font-size: 1.5rem;
 }
 #card {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   flex-direction: column;
   width: 90%;
   background-color: white;
@@ -46,7 +72,7 @@ body {
   border-radius: 0.5rem;
 }
 #product-img {
-  min-height: 10rem;
+  min-height: 12.5rem;
   background-image: url("./images/image-product-mobile.jpg");
   background-size: cover;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -58,10 +84,26 @@ body {
 }
 #product-name {
   color: var(--very-dark-blue);
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 #product-description {
   margin: 0.5rem 0;
+  padding: 0.25rem 0;
   color: var(--dark-grayish-blue);
   line-height: 1.5;
+}
+.btn {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--dark-cyan);
+  color: white;
+  padding: 1rem;
+  justify-content: center;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--even-darker-cyan);
+}
+#cart-icon {
+  margin-right: 1rem;
 }
