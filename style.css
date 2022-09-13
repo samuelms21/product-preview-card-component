@@ -80,11 +80,12 @@ main {
 #product-category {
   color: var(--dark-grayish-blue);
   letter-spacing: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin: 0.75rem 0;
 }
 #product-name {
   color: var(--very-dark-blue);
   font-size: 1.75rem;
+  padding: 0.5rem 0;
 }
 #product-description {
   margin: 0.5rem 0;
@@ -106,4 +107,20 @@ main {
 }
 #cart-icon {
   margin-right: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  #card {
+    width: 600px;
+    flex-direction: row;
+  }
+  #product-img {
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    width: 45%;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .card-text {
+    width: 50%;
+    padding: 1.5rem;
+  }
 }
